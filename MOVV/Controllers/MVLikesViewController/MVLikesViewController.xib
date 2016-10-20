@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVLikesViewController" customModule="MOVVV" customModuleProvider="target">
+            <connections>
+                <outlet property="nullcaseLabel" destination="lxm-d0-sBp" id="GsW-no-y7a"/>
+                <outlet property="tblView" destination="MSy-PY-5C7" id="mJg-Ui-c6a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MSy-PY-5C7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2MG-ZK-YYM"/>
+                        <outlet property="delegate" destination="-1" id="7I7-UW-xJF"/>
+                    </connections>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There Are No Likes yet, Why Not Be the First." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxm-d0-sBp">
+                    <rect key="frame" x="108" y="289" width="384" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lxm-d0-sBp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3Yy-tz-tDj"/>
+                <constraint firstAttribute="bottom" secondItem="MSy-PY-5C7" secondAttribute="bottom" id="cIU-jt-tbt"/>
+                <constraint firstAttribute="trailing" secondItem="MSy-PY-5C7" secondAttribute="trailing" id="cNe-Lw-FDl"/>
+                <constraint firstItem="lxm-d0-sBp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="njW-Wx-ni8"/>
+                <constraint firstItem="MSy-PY-5C7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="t8V-Z0-qjI"/>
+                <constraint firstItem="MSy-PY-5C7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xUl-Su-wC4"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" id="KGk-i7-Jjw" customClass="ItemDetailCommentCell" customModule="MOVVV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vvX-PT-W1h">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Ea7-Vp-KTu"/>
+                            <constraint firstAttribute="width" constant="40" id="J8i-ct-7sg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vx4-fy-H6y" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="50" y="5" width="103" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="F68-Np-563"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" red="0.20392156859999999" green="0.7725490196" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="time" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzq-uc-gzs">
+                        <rect key="frame" x="285" y="5" width="27" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="4TH-eK-Nne"/>
+                            <constraint firstAttribute="height" constant="15" id="8MN-k5-Gdc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4TH-eK-Nne"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock.png" translatesAutoresizingMaskIntoConstraints="NO" id="9cI-Tl-Wxg">
+                        <rect key="frame" x="265" y="7" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="TGj-vl-97K"/>
+                            <constraint firstAttribute="width" constant="12" id="UW0-wk-4Db"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLF-Ka-ONp" userLabel="separatorView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="5qW-hA-HLU"/>
+                            <constraint firstAttribute="height" constant="1" id="bWj-pJ-iQq"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMz-hA-wTy">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="comment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03p-s5-b1r" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="50" y="26" width="262" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="9Sv-Fj-uNQ"/>
+                        </connections>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nzq-uc-gzs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="0FB-Vd-5kL"/>
+                    <constraint firstAttribute="trailing" secondItem="03p-s5-b1r" secondAttribute="trailing" constant="8" id="23v-0u-eQG"/>
+                    <constraint firstItem="vx4-fy-H6y" firstAttribute="leading" secondItem="vvX-PT-W1h" secondAttribute="trailing" constant="5" id="3DM-uN-dJn"/>
+                    <constraint firstItem="vvX-PT-W1h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="9HT-xm-0jI"/>
+                    <constraint firstAttribute="trailing" secondItem="nzq-uc-gzs" secondAttribute="trailing" constant="8" id="Gbw-rg-Fzy"/>
+                    <constraint firstAttribute="bottom" secondItem="03p-s5-b1r" secondAttribute="bottom" constant="13" id="Oqv-a8-iqi"/>
+                    <constraint firstItem="9cI-Tl-Wxg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="Qba-hp-px0"/>
+                    <constraint firstItem="9cI-Tl-Wxg" firstAttribute="leading" secondItem="vx4-fy-H6y" secondAttribute="trailing" constant="26" id="Rex-vj-6rf"/>
+                    <constraint firstItem="vvX-PT-W1h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="UES-fx-cGO"/>
+                    <constraint firstItem="bLF-Ka-ONp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Vq6-Vl-dXQ"/>
+                    <constraint firstItem="03p-s5-b1r" firstAttribute="leading" secondItem="vvX-PT-W1h" secondAttribute="trailing" constant="5" id="WuN-yg-qpf"/>
+                    <constraint firstItem="vx4-fy-H6y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="fiM-Cq-jK1"/>
+                    <constraint firstItem="bLF-Ka-ONp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gwO-Pk-Ap9"/>
+                    <constraint firstAttribute="trailing" secondItem="bLF-Ka-ONp" secondAttribute="trailing" id="mFr-mr-woG"/>
+                    <constraint firstItem="nzq-uc-gzs" firstAttribute="leading" secondItem="9cI-Tl-Wxg" secondAttribute="trailing" constant="8" id="ryd-Jb-rKn"/>
+                    <constraint firstItem="03p-s5-b1r" firstAttribute="top" secondItem="vx4-fy-H6y" secondAttribute="bottom" id="xc2-7p-ua6"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Rex-vj-6rf"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentLabel" destination="03p-s5-b1r" id="XdI-7f-3Zz"/>
+                <outlet property="timeLabel" destination="nzq-uc-gzs" id="jxH-tu-0fm"/>
+                <outlet property="userImage" destination="vvX-PT-W1h" id="YFU-3R-adX"/>
+                <outlet property="userProfileButton" destination="LMz-hA-wTy" id="JtN-38-8Sw"/>
+                <outlet property="usernameLabel" destination="vx4-fy-H6y" id="Peb-bE-KXt"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="clock.png" width="21" height="21"/>
+    </resources>
+</document>

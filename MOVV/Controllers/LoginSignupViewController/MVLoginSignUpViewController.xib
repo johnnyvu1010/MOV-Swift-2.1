@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVLoginSignUpViewController" customModule="MOVVV" customModuleProvider="target">
+            <connections>
+                <outlet property="dataTable" destination="NwH-Lk-bXX" id="rzw-fs-APV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NwH-Lk-bXX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="vC8-b2-TNP"/>
+                        <outlet property="delegate" destination="-1" id="LOc-l2-O6e"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NwH-Lk-bXX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="F92-Dv-aaD"/>
+                <constraint firstAttribute="bottom" secondItem="NwH-Lk-bXX" secondAttribute="bottom" id="Jyw-h5-0zU"/>
+                <constraint firstAttribute="trailing" secondItem="NwH-Lk-bXX" secondAttribute="trailing" id="XCn-fH-OkP"/>
+                <constraint firstItem="NwH-Lk-bXX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ujL-T7-nC5"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

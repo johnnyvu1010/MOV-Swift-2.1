@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TagFooterView" customModule="MOVVV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="   Add new tags..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A4b-cW-y6o">
+                    <rect key="frame" x="0.0" y="150" width="256" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="h0V-3V-MqH"/>
+                        <constraint firstAttribute="width" constant="256" id="ztG-pf-GX1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ztG-pf-GX1"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXT-zj-DSl">
+                    <rect key="frame" x="256" y="150" width="64" height="50"/>
+                    <color key="backgroundColor" red="0.2784313725" green="0.90588235289999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="3b4-NM-xY1"/>
+                        <constraint firstAttribute="width" constant="64" id="Wxs-dK-0wJ"/>
+                        <constraint firstAttribute="width" constant="64" id="XaA-Gg-N9k"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="m0j-vu-1Bu"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="sjI-jL-ShN"/>
+                    </constraints>
+                    <state key="normal" title="Add">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="XaA-Gg-N9k"/>
+                            <exclude reference="m0j-vu-1Bu"/>
+                            <exclude reference="sjI-jL-ShN"/>
+                        </mask>
+                    </variation>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sx-oI-Y3T">
+                    <rect key="frame" x="40" y="50" width="240" height="50"/>
+                    <color key="backgroundColor" red="0.2784313725" green="0.90588235289999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gk7-pk-vP0"/>
+                    </constraints>
+                    <state key="normal" title="Done adding tags">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7sx-oI-Y3T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="5Tm-nv-AsM"/>
+                <constraint firstAttribute="bottom" secondItem="A4b-cW-y6o" secondAttribute="bottom" id="D83-dh-Cpj"/>
+                <constraint firstAttribute="bottom" secondItem="FXT-zj-DSl" secondAttribute="bottom" id="J54-fz-vA5"/>
+                <constraint firstItem="7sx-oI-Y3T" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="L0T-4J-RGR"/>
+                <constraint firstAttribute="bottom" secondItem="FXT-zj-DSl" secondAttribute="bottom" id="TLx-FC-14i"/>
+                <constraint firstItem="FXT-zj-DSl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zoj-xl-m9V"/>
+                <constraint firstItem="FXT-zj-DSl" firstAttribute="leading" secondItem="A4b-cW-y6o" secondAttribute="trailing" id="exm-oL-2rn"/>
+                <constraint firstAttribute="trailing" secondItem="FXT-zj-DSl" secondAttribute="trailing" id="mTo-id-cyh"/>
+                <constraint firstAttribute="trailing" secondItem="7sx-oI-Y3T" secondAttribute="trailing" constant="40" id="sEC-X8-f9a"/>
+                <constraint firstAttribute="trailing" secondItem="FXT-zj-DSl" secondAttribute="trailing" id="tcf-4g-pjo"/>
+                <constraint firstItem="A4b-cW-y6o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vN1-LT-FUq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="TLx-FC-14i"/>
+                    <exclude reference="Zoj-xl-m9V"/>
+                    <exclude reference="tcf-4g-pjo"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="addTagButton" destination="FXT-zj-DSl" id="f7I-pa-x50"/>
+                <outlet property="doneButton" destination="7sx-oI-Y3T" id="uoW-Gf-HWA"/>
+                <outlet property="tagField" destination="A4b-cW-y6o" id="fZm-MD-EJV"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MVLoginSignUpFooterView" customModule="MOVVV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="490" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jN8-nP-5pe">
+                    <rect key="frame" x="8" y="5" width="474" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="7qc-v5-ZO2"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Don't have an account?">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Signup">
+                                <attributes>
+                                    <color key="NSColor" red="0.14412715517241378" green="0.76515804597701143" blue="0.081672054597701091" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9LJ-lb-nod">
+                    <rect key="frame" x="8" y="5" width="474" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="YFr-es-Lmb"/>
+                    </constraints>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Already have an account?">
+                                <attributes>
+                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Login">
+                                <attributes>
+                                    <color key="NSColor" red="0.14412715517241378" green="0.76515804597701143" blue="0.081672054597701091" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jN8-nP-5pe" secondAttribute="trailing" constant="8" id="38i-XR-YpB"/>
+                <constraint firstItem="jN8-nP-5pe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="9YX-g5-LjX"/>
+                <constraint firstAttribute="bottom" secondItem="9LJ-lb-nod" secondAttribute="bottom" constant="37" id="AqU-qQ-omZ"/>
+                <constraint firstItem="jN8-nP-5pe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ByJ-O1-5dO"/>
+                <constraint firstItem="9LJ-lb-nod" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="OYl-uG-IbA"/>
+                <constraint firstAttribute="trailing" secondItem="9LJ-lb-nod" secondAttribute="trailing" constant="8" id="iwl-hq-GYA"/>
+                <constraint firstAttribute="bottom" secondItem="jN8-nP-5pe" secondAttribute="bottom" constant="37" id="sae-g8-eOs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loginBtn" destination="9LJ-lb-nod" id="cSN-eD-ISA"/>
+                <outlet property="signUpBtn" destination="jN8-nP-5pe" id="50f-ge-evz"/>
+            </connections>
+            <point key="canvasLocation" x="485" y="309.5"/>
+        </view>
+    </objects>
+</document>

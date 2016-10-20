@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uSK-HN-P7G" customClass="CollectionHeaderReusableView" customModule="MOVVV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pf1-fV-pOs">
+                    <rect key="frame" x="16" y="10" width="288" height="29"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <segments>
+                        <segment title="Followers"/>
+                        <segment title="Following"/>
+                    </segments>
+                    <color key="tintColor" red="0.2784313725" green="0.90588235289999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVs-TA-GIQ">
+                    <rect key="frame" x="0.0" y="45" width="320" height="5"/>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="KIh-29-zty"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pf1-fV-pOs" secondAttribute="bottom" constant="12" id="7Jr-8A-qbo"/>
+                <constraint firstAttribute="bottom" secondItem="pVs-TA-GIQ" secondAttribute="bottom" id="A0K-X7-6HW"/>
+                <constraint firstAttribute="trailing" secondItem="pVs-TA-GIQ" secondAttribute="trailing" id="DEC-Bx-SOM"/>
+                <constraint firstAttribute="trailing" secondItem="pf1-fV-pOs" secondAttribute="trailing" constant="16" id="GIh-pr-lHB"/>
+                <constraint firstItem="pf1-fV-pOs" firstAttribute="top" secondItem="uSK-HN-P7G" secondAttribute="top" constant="10" id="Maa-gM-n53"/>
+                <constraint firstItem="pVs-TA-GIQ" firstAttribute="leading" secondItem="uSK-HN-P7G" secondAttribute="leading" id="pBv-5a-cA2"/>
+                <constraint firstItem="pf1-fV-pOs" firstAttribute="leading" secondItem="uSK-HN-P7G" secondAttribute="leading" constant="16" id="yoz-nn-6Kc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="segmentedControl" destination="pf1-fV-pOs" id="4Cn-PS-Zfq"/>
+            </connections>
+        </view>
+    </objects>
+</document>

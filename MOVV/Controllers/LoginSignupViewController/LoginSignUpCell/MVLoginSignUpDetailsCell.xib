@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="MVLoginSignUpDetailsCell" customModule="MOVVV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="403" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qY9-oL-1ds">
+                        <rect key="frame" x="0.0" y="0.0" width="403" height="76"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5gM-Wp-BTL">
+                                <rect key="frame" x="0.0" y="0.0" width="403" height="15"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tGx-jm-gKg">
+                                <rect key="frame" x="20" y="43" width="363" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="j7F-A9-iAL"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sk1-fp-nm1">
+                                <rect key="frame" x="20" y="75" width="363" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ice-3g-iBd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-ws-PRX">
+                                <rect key="frame" x="20" y="16" width="363" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tGx-jm-gKg" firstAttribute="leading" secondItem="qY9-oL-1ds" secondAttribute="leading" constant="20" id="240-KM-4yB"/>
+                            <constraint firstAttribute="trailing" secondItem="5gM-Wp-BTL" secondAttribute="trailing" id="7Ao-AC-WWk"/>
+                            <constraint firstItem="tGx-jm-gKg" firstAttribute="top" secondItem="ksV-ws-PRX" secondAttribute="bottom" constant="8" id="99z-UV-ssx"/>
+                            <constraint firstAttribute="trailing" secondItem="tGx-jm-gKg" secondAttribute="trailing" constant="20" id="C8a-Xh-amo"/>
+                            <constraint firstItem="ksV-ws-PRX" firstAttribute="top" secondItem="5gM-Wp-BTL" secondAttribute="bottom" constant="1" id="Caf-bt-fjM"/>
+                            <constraint firstItem="ksV-ws-PRX" firstAttribute="leading" secondItem="qY9-oL-1ds" secondAttribute="leading" constant="20" id="U7g-l7-C9j"/>
+                            <constraint firstItem="5gM-Wp-BTL" firstAttribute="height" secondItem="qY9-oL-1ds" secondAttribute="height" multiplier="5:25" id="Xh2-U2-fhE"/>
+                            <constraint firstItem="5gM-Wp-BTL" firstAttribute="top" secondItem="qY9-oL-1ds" secondAttribute="top" id="fQd-SK-kUH"/>
+                            <constraint firstItem="ksV-ws-PRX" firstAttribute="height" secondItem="qY9-oL-1ds" secondAttribute="height" multiplier="8:32" id="fWe-fF-5cU"/>
+                            <constraint firstItem="Sk1-fp-nm1" firstAttribute="leading" secondItem="qY9-oL-1ds" secondAttribute="leading" constant="20" id="gYg-8d-W9n"/>
+                            <constraint firstAttribute="trailing" secondItem="Sk1-fp-nm1" secondAttribute="trailing" constant="20" id="kBS-Ux-xKL"/>
+                            <constraint firstAttribute="bottom" secondItem="tGx-jm-gKg" secondAttribute="bottom" constant="4" id="ptT-1M-XeN"/>
+                            <constraint firstAttribute="bottom" secondItem="Sk1-fp-nm1" secondAttribute="bottom" id="sof-du-pYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ksV-ws-PRX" secondAttribute="trailing" constant="20" id="w8e-M5-BTC"/>
+                            <constraint firstItem="5gM-Wp-BTL" firstAttribute="leading" secondItem="qY9-oL-1ds" secondAttribute="leading" id="z8X-NS-G0p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="qY9-oL-1ds" secondAttribute="bottom" id="VZc-dM-34z"/>
+                    <constraint firstAttribute="trailing" secondItem="qY9-oL-1ds" secondAttribute="trailing" id="bV6-jT-mDJ"/>
+                    <constraint firstItem="qY9-oL-1ds" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dAs-l6-GuZ"/>
+                    <constraint firstItem="qY9-oL-1ds" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fJJ-P2-RhE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dataLabel" destination="ksV-ws-PRX" id="aP7-7Z-7xN"/>
+                <outlet property="datatextField" destination="tGx-jm-gKg" id="TWV-JQ-Z24"/>
+            </connections>
+            <point key="canvasLocation" x="242.5" y="230.5"/>
+        </tableViewCell>
+    </objects>
+</document>

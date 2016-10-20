@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="MyTabBar" id="i5M-Pr-FkT" customClass="BluredTabbarView" customModule="MOVVV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-BV-XtW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoY-Jo-YPD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lx6-7f-Os7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4O-cc-4DB" userLabel="homeButton">
+                    <rect key="frame" x="2" y="5" width="60" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="r4O-cc-4DB" secondAttribute="height" multiplier="4:3" id="p3j-Ki-VzP"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="18" minY="15" maxX="22" maxY="15"/>
+                    <state key="normal" image="homeButtonSelected.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onHomeButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="TyS-iT-hRJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkQ-tc-Z5h" userLabel="searchButton">
+                    <rect key="frame" x="194" y="5" width="60" height="45"/>
+                    <inset key="imageEdgeInsets" minX="23" minY="15" maxX="23" maxY="15"/>
+                    <state key="normal" image="newsButton.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onSearchBarButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="etb-Mu-aFg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dod-Sv-vPl" userLabel="cameraButton">
+                    <rect key="frame" x="130" y="5" width="60" height="45"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="1" maxX="10" maxY="5"/>
+                    <state key="normal" image="camera.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rt-A0-5c0" userLabel="newsButton">
+                    <rect key="frame" x="66" y="5" width="60" height="45"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="15" maxX="20" maxY="15"/>
+                    <state key="normal" image="searchBarButton.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onNewsButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="OCC-B9-c9s"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3g-0q-GmV" userLabel="profileButton">
+                    <rect key="frame" x="257" y="5" width="60" height="45"/>
+                    <inset key="imageEdgeInsets" minX="23" minY="15" maxX="23" maxY="15"/>
+                    <state key="normal" image="profileButton.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onProfileButton:" destination="i5M-Pr-FkT" eventType="touchUpInside" id="cfR-mj-Ujj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UD4-BV-XtW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Vb-Cu-8S0"/>
+                <constraint firstItem="6Rt-A0-5c0" firstAttribute="bottom" secondItem="UD4-BV-XtW" secondAttribute="bottom" id="3h7-z6-Ny1"/>
+                <constraint firstItem="UD4-BV-XtW" firstAttribute="centerY" secondItem="XoY-Jo-YPD" secondAttribute="centerY" constant="-0.5" id="7c1-xi-EcK"/>
+                <constraint firstItem="6Rt-A0-5c0" firstAttribute="width" secondItem="r4O-cc-4DB" secondAttribute="width" id="7zL-bs-0xd"/>
+                <constraint firstItem="UD4-BV-XtW" firstAttribute="centerX" secondItem="XoY-Jo-YPD" secondAttribute="centerX" id="CHs-lo-lpb"/>
+                <constraint firstItem="6Rt-A0-5c0" firstAttribute="height" secondItem="r4O-cc-4DB" secondAttribute="height" id="CIn-zH-b7a"/>
+                <constraint firstAttribute="bottom" secondItem="UD4-BV-XtW" secondAttribute="bottom" id="Exh-WZ-dAr"/>
+                <constraint firstItem="UD4-BV-XtW" firstAttribute="height" secondItem="XoY-Jo-YPD" secondAttribute="height" id="JcT-yK-X4h"/>
+                <constraint firstItem="Dod-Sv-vPl" firstAttribute="bottom" secondItem="UD4-BV-XtW" secondAttribute="bottom" id="K1t-IP-HfJ"/>
+                <constraint firstAttribute="bottom" secondItem="O3g-0q-GmV" secondAttribute="bottom" id="LY9-yu-mca"/>
+                <constraint firstItem="Dod-Sv-vPl" firstAttribute="centerX" secondItem="UD4-BV-XtW" secondAttribute="centerX" id="THt-dG-gYG"/>
+                <constraint firstItem="O3g-0q-GmV" firstAttribute="height" secondItem="r4O-cc-4DB" secondAttribute="height" id="Vsv-6B-ieY"/>
+                <constraint firstAttribute="trailing" secondItem="O3g-0q-GmV" secondAttribute="trailing" constant="3" id="W0R-0v-mQ3"/>
+                <constraint firstItem="r4O-cc-4DB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="2" id="WHG-TA-QXt"/>
+                <constraint firstItem="QkQ-tc-Z5h" firstAttribute="height" secondItem="r4O-cc-4DB" secondAttribute="height" id="a9K-5T-le4"/>
+                <constraint firstItem="UD4-BV-XtW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dc8-ea-NM1"/>
+                <constraint firstItem="6Rt-A0-5c0" firstAttribute="centerX" secondItem="UD4-BV-XtW" secondAttribute="centerX" multiplier="0.6" id="glp-LC-3J0"/>
+                <constraint firstItem="QkQ-tc-Z5h" firstAttribute="width" secondItem="r4O-cc-4DB" secondAttribute="width" id="hwj-08-o5k"/>
+                <constraint firstAttribute="bottom" secondItem="r4O-cc-4DB" secondAttribute="bottom" id="iif-fB-8sT"/>
+                <constraint firstItem="QkQ-tc-Z5h" firstAttribute="bottom" secondItem="UD4-BV-XtW" secondAttribute="bottom" id="jE6-6f-LCb"/>
+                <constraint firstItem="O3g-0q-GmV" firstAttribute="width" secondItem="r4O-cc-4DB" secondAttribute="width" id="ktD-VH-SJG"/>
+                <constraint firstItem="QkQ-tc-Z5h" firstAttribute="centerX" secondItem="UD4-BV-XtW" secondAttribute="centerX" multiplier="1.4" id="mSE-au-bEM"/>
+                <constraint firstItem="UD4-BV-XtW" firstAttribute="width" secondItem="XoY-Jo-YPD" secondAttribute="width" id="nnI-AH-gZW"/>
+                <constraint firstAttribute="trailing" secondItem="UD4-BV-XtW" secondAttribute="trailing" id="rGv-Lm-h0b"/>
+                <constraint firstItem="Dod-Sv-vPl" firstAttribute="height" secondItem="r4O-cc-4DB" secondAttribute="height" id="vTh-mt-dZF"/>
+                <constraint firstItem="O3g-0q-GmV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="vcp-mW-U9K"/>
+                <constraint firstItem="Dod-Sv-vPl" firstAttribute="width" secondItem="r4O-cc-4DB" secondAttribute="width" id="wny-6D-1sp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cameraButton" destination="Dod-Sv-vPl" id="luq-VR-TSZ"/>
+                <outlet property="homeButton" destination="r4O-cc-4DB" id="sWB-iX-c1i"/>
+                <outlet property="newsButton" destination="6Rt-A0-5c0" id="HmP-HY-799"/>
+                <outlet property="profileButton" destination="O3g-0q-GmV" id="mDP-Xb-uwR"/>
+                <outlet property="searchButton" destination="QkQ-tc-Z5h" id="r8H-EH-SXg"/>
+            </connections>
+            <point key="canvasLocation" x="392" y="240"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera.png" width="683" height="683"/>
+        <image name="homeButtonSelected.png" width="60" height="45"/>
+        <image name="newsButton.png" width="60" height="45"/>
+        <image name="profileButton.png" width="50" height="48"/>
+        <image name="searchBarButton.png" width="60" height="45"/>
+        <image name="tabbar.png" width="751" height="101"/>
+    </resources>
+</document>
